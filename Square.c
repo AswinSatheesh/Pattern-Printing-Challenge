@@ -1,15 +1,16 @@
-//Right Angled Triangle:
+//Square pattern print
 #include<stdio.h>
 int main()
 {
-    int num=8;
-    for(int row=1;row <=num;row++)
+    int n =5;
+    for(int row = 1; row <= n; row++)
     {
-        for(int col =1; col <= row; col++)
+        for(int col = 1; col <=n; col++)
         {
             printf("* ");
         }
         printf("\n");
     }
+
     return 0;
 }
