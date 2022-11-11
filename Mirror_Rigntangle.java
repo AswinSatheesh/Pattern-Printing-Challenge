@@ -1,16 +1,24 @@
+import java.util.Scanner;
 public class Mirror_Rigntangle{
     public static void main(String[] args)
     {
-        for(int i=0;i<5;i++){
-            for(int j=1;j<5-i;j++)
-            {
-                System.out.println(" ");
-            }
-            for(int k=0;k<=i;k++)
-            {
-                System.out.print("*");
-            }
-            System.out.println();
-        }
+ 	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter N : ");
+	int n=sc.nextInt();	 
+               System.out.print("Enter Symbol : ");
+	char c = sc.next().charAt(0);
+	for(int i=1;i<=n;i++)
+               {
+	 for(int j=0;j<n-i;j++)
+                       {
+                               System.out.print(" ");
+                       }
+	
+               for(int j=0;j<i;j++)
+                       {
+                               System.out.print(c);
+                       }
+                     System.out.println();
+               }             
     }
 }
